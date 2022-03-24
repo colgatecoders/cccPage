@@ -12,7 +12,12 @@ h1 {
     letter-spacing: -0.05em;
 }
 
-h2, h3, h4, h5, h6, p {
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
     font-family: 'Karla', sans-serif;
     font-weight: 400;
     color: #fff;
@@ -26,7 +31,7 @@ h2, h3, h4, h5, h6, p {
     /* justify-content: space-between; */
 }
 
-.workshop-title-time > * {
+.workshop-title-time>* {
     margin: 0;
 }
 
@@ -34,48 +39,56 @@ h2, h3, h4, h5, h6, p {
     color: #aaaaaa;
 }
 
-p.event-type.workshop {
+.event-type.workshop {
     color: black;
     background-color: #216ABD;
     border-radius: 5px;
-    padding: 0 3px 0 3px;
+    padding: 3px 4px 3px 4px;
+    margin: 0;
+    border: none;
+    transition: transform .1s;
 }
 
-p.event-type.keynote {
+.event-type.workshop:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.event-type.keynote {
     color: black;
     background-color: #FA991C;
     border-radius: 5px;
     padding: 0 3px 0 3px;
 }
 
-p.event-type.alumni {
+.event-type.alumni {
     color: black;
     background-color: #06C38F;
     border-radius: 5px;
     padding: 0 3px 0 3px;
 }
 
-p.event-type.series1 {
+.event-type.series1 {
     color: black;
     background-color: #50e9e1;
     border-radius: 5px;
     padding: 0 3px 0 3px;
 }
 
-p.event-type.series2 {
+.event-type.series2 {
     color: black;
     background-color: #97ccf0;
     border-radius: 5px;
     padding: 0 3px 0 3px;
 }
 
-.button-link {
-    margin: 0;
+#button-link {
+    /* margin: 0; */
     padding: 0;
     border: none;
+    height: 100%;
+    background-color: red;
     background: none;
-    display: flex;
-    align-items: baseline;
 }
 
 body p.host {
@@ -88,7 +101,7 @@ ul {
     list-style: none;
 }
 
-ul > li:not(:last-child) {
+ul>li:not(:last-child) {
     margin-bottom: 20px;
 }
 
@@ -99,7 +112,7 @@ ol {
     letter-spacing: -0.05em;
 }
 
-ol > li:not(:last-child) {
+ol>li:not(:last-child) {
     margin-bottom: 20px;
 }
 
