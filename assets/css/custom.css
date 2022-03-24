@@ -39,35 +39,41 @@ p {
     color: #aaaaaa;
 }
 
-p.event-type.workshop {
+.event-type.workshop {
     color: black;
     background-color: #216ABD;
     border-radius: 5px;
-    padding: 0 3px 0 3px;
+    padding: 3px 4px 3px 4px;
+    margin: 0;
+    border: none;
 }
 
-p.event-type.keynote {
+.event-type.workshop:hover {
+    cursor: pointer;
+}
+
+.event-type.keynote {
     color: black;
     background-color: #FA991C;
     border-radius: 5px;
     padding: 0 3px 0 3px;
 }
 
-p.event-type.alumni {
+.event-type.alumni {
     color: black;
     background-color: #06C38F;
     border-radius: 5px;
     padding: 0 3px 0 3px;
 }
 
-p.event-type.series1 {
+.event-type.series1 {
     color: black;
     background-color: #50e9e1;
     border-radius: 5px;
     padding: 0 3px 0 3px;
 }
 
-p.event-type.series2 {
+.event-type.series2 {
     color: black;
     background-color: #97ccf0;
     border-radius: 5px;
@@ -75,10 +81,11 @@ p.event-type.series2 {
 }
 
 #button-link {
-    margin: 0;
+    /* margin: 0; */
     padding: 0;
     border: none;
-    background-color: none;
+    height: 100%;
+    background-color: red;
     background: none;
 }
 
