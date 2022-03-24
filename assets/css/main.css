@@ -25,6 +25,13 @@ section, summary, time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;}
 
+h1 {
+	font-family: 'Raleway',
+	sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
@@ -83,16 +90,16 @@ input, select, textarea {
 	}
 
 	body {
-		background-image: url("images/overlay.png"), -moz-linear-gradient(top, rgba(0, 0, 0, 0) 75%, #821019);
-		background-image: url("images/overlay.png"), -webkit-linear-gradient(top, #821019 75%, #ffffff);
-		background-image: url("images/overlay.png"), -ms-linear-gradient(top, rgba(0, 0, 0, 0) 75%, #821019);
+		/* background-image: url("images/overlay.png"), -moz-linear-gradient(top, rgba(0, 0, 0, 0) 75%, #821019);
 		background-image: url("images/overlay.png"), linear-gradient(top, rgba(0, 0, 0, 0) 75%, #821019);
+		background-image: url("images/overlay.png"), -webkit-linear-gradient(top, #821019 75%, #ffffff);
+		background-image: url("images/overlay.png"), -ms-linear-gradient(top, rgba(0, 0, 0, 0) 75%, #821019); */
+		background-color: #1e1f21;
 		background-position: top left, bottom left, auto;
 		background-size: auto, 100% 100%, cover;
 		background-attachment: fixed;
 		background-repeat: repeat, no-repeat, auto;
 		position: relative;
-		background-color: #00d9ff;
 		line-height: 1.75em;
 		overflow-x: hidden;
 		overflow-y: auto;
@@ -361,6 +368,7 @@ input, select, textarea {
 		overflow-x: hidden;
 		-webkit-overflow-scrolling: touch;
 		padding: 5px;
+		box-shadow: rgba(0, 0, 0, 0.575) 10px 10px 20px;
 	}
 
 		#main .items {
@@ -371,7 +379,7 @@ input, select, textarea {
 		}
 
 			#main .items > :last-child {
-				border-right: solid 10px #ffffff;
+				/* border-right: solid 10px #000; */
 			}
 
 		#main .item {
@@ -385,7 +393,7 @@ input, select, textarea {
 			flex-shrink: 0;
 			margin: 5px;
 			height: 16em;
-			box-shadow: 0 0 0 10px #ffffff;
+			box-shadow: 0 0 0 10px #fff;
 		}
 
 			#main .item.span-1 {
@@ -401,7 +409,7 @@ input, select, textarea {
 			}
 
 			#main .item.intro {
-				background-color: #821019;
+				background-color: #06c38f;
 				background-image: url("images/overlay.png");
 				display: -moz-flex;
 				display: -webkit-flex;
@@ -415,12 +423,13 @@ input, select, textarea {
 				-webkit-justify-content: center;
 				-ms-justify-content: center;
 				justify-content: center;
-				padding: 1em 3em;
+				/* padding: 3em 3em 3em 3em; */
+				padding: 1em 1em ;
 			}
-
-				#main .item.intro h1 {
-					font-size: 3em;
-					line-height: 1em;
+			#main .item.intro h1 {
+				font-size: 2.8em;
+				line-height: 1em;
+				/* padding: 1em 1em ; */
 				}
 
 				#main .item.intro p {
@@ -737,7 +746,6 @@ input, select, textarea {
 			bottom: 0;
 			left: 0;
 			background: #1a1f2c;
-			background: rgba(18, 21, 29, 0.85);
 			display: block;
 			width: 100%;
 			line-height: 75px;
@@ -809,7 +817,7 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			.poptrox-popup {
-				background: #0a0f1c;
+				background: #1e1f21;
 				box-shadow: 0px 0px 30px 10px rgba(8, 11, 19, 0.85);
 				border: solid 2.5px #fff;
 				-moz-box-sizing: content-box;
