@@ -69,11 +69,13 @@ p.event-type.series2 {
     padding: 0 3px 0 3px;
 }
 
-#button-link {
+.button-link {
     margin: 0;
     padding: 0;
     border: none;
-    background-color: none;
+    background: none;
+    display: flex;
+    align-items: baseline;
 }
 
 body p.host {
