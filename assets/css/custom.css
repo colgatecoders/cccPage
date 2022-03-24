@@ -24,6 +24,15 @@ p {
     letter-spacing: -0.05em;
 }
 
+p {
+    color: rgb(219, 219, 219);
+
+}
+
+h3 {
+    font-weight: 600;
+}
+
 .workshop-title-time {
     display: flex;
     gap: 10px;
@@ -103,6 +112,10 @@ ul {
 
 ul>li:not(:last-child) {
     margin-bottom: 20px;
+}
+
+ul li p {
+    margin-top: 5px;
 }
 
 ol {
