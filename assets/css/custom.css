@@ -46,10 +46,12 @@ p {
     padding: 3px 4px 3px 4px;
     margin: 0;
     border: none;
+    transition: transform .1s;
 }
 
 .event-type.workshop:hover {
     cursor: pointer;
+    transform: scale(1.05);
 }
 
 .event-type.keynote {
