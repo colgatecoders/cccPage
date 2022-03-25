@@ -1,18 +1,63 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600");
 @import url("fontawesome-all.min.css");
 
-body.iframe {
-    margin: 80px;
+
+
+@media screen and (max-width: 1280px) {
+
+    body.iframe {
+        margin: 80px;
+        margin-top: 90px;
+    }
+
+}
+
+@media screen and (max-width: 736px) {
+
+    body.iframe {
+        margin: 20px;
+        margin-top: 90px;
+        /* width: 100%; */
+        /* position: relative; */
+    }
+
+}
+
+html.popup {
+    /* margin */
+    position: relative;
+    width: 100%;
+}
+
+
+.popup-header {
+    background-color: #06C38F;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    left: 0;
 }
 
 h1 {
-    font-family: 'Secular One', sans-serif;
+    /* font-family: 'Secular One', sans-serif; */
+    font-family: 'Raleway',
+        sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
     font-weight: 400;
     color: #fff;
-    letter-spacing: -0.05em;
+    /* letter-spacing: -0.05em; */
 }
 
-h2,
+h2 {
+    font-family: 'Raleway',
+        sans-serif;
+    color: #fff;
+    /* font-family: 'Karla', sans-serif; */
+    font-weight: 400;
+}
+
 h3,
 h4,
 h5,
@@ -24,8 +69,18 @@ p {
     letter-spacing: -0.05em;
 }
 
+p {
+    color: rgb(219, 219, 219);
+
+}
+
+h3 {
+    font-weight: 600;
+}
+
 .workshop-title-time {
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
     align-items: baseline;
     /* justify-content: space-between; */
@@ -39,12 +94,22 @@ p {
     color: #aaaaaa;
 }
 
-.event-type.workshop {
-    color: black;
-    background-color: #216ABD;
+.event-type {
+    color: white;
     border-radius: 5px;
     padding: 3px 4px 3px 4px;
     margin: 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: 'Karla',
+    sans-serif;
+    font-size: 15px;
+    /* font-kerning: 1; */
+    letter-spacing: 1px;
+}
+
+.event-type.workshop {
+    background-color: #216ABD;
     border: none;
 }
 
@@ -58,30 +123,15 @@ p {
 }
 
 .event-type.keynote {
-    color: black;
     background-color: #FA991C;
-    border-radius: 5px;
-    padding: 3px 4px 3px 4px;
-    margin: 0;
-    border: none;
 }
 
 .event-type.alumni {
-    color: black;
     background-color: #06C38F;
-    border-radius: 5px;
-    padding: 3px 4px 3px 4px;
-    margin: 0;
-    border: none;
 }
 
 .event-type.series1 {
-    color: black;
     background-color: #50e9e1;
-    border-radius: 5px;
-    padding: 3px 4px 3px 4px;
-    margin: 0;
-    border: none;
 }
 
 .event-type.series2 {
@@ -108,12 +158,26 @@ body p.host {
 }
 
 ul {
-    padding: 0 0 20px 0;
-    list-style: none;
+    background-color: rgb(26, 26, 26);
+    padding: 10px;
+    padding-left: 10px;
+    border-radius: 10px;
+    /* padding: 0 0 20px 0; */
+    list-style: square;
+    /* list-style-position: inside; */
+    color: #06C38F;
+}
+
+ul>li {
+    margin-left: 15px;
 }
 
 ul>li:not(:last-child) {
     margin-bottom: 20px;
+}
+
+ul li p {
+    margin-top: 5px;
 }
 
 ol {
