@@ -124,14 +124,18 @@ h3 {
 
 .event-type.keynote {
     background-color: #FA991C;
+    border: none;
 }
 
 .event-type.alumni {
     background-color: #06C38F;
+    border: none;
 }
 
 .event-type.series1 {
     background-color: #50e9e1;
+    color: black;
+    border: none;
 }
 
 .event-type.series2 {
@@ -216,4 +220,18 @@ h2.proficiency.advanced {
     display: flex;
     gap: 10px;
     align-items: baseline;
+}
+
+.guest-image {
+    float: left;
+    height: 20em;
+    margin: 0 20px 0 0;
+}
+
+.keynote-photo-bio {
+    margin: 20px;
+}
+
+.contact-link {
+    color: #216ABD;
 }
