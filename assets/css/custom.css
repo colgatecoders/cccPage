@@ -78,12 +78,26 @@ h3 {
     font-weight: 600;
 }
 
+.keynote h3 {
+    font-size: 1.4em;
+    width: 100%;
+    background-color: #216ABD;
+}
+
+.keynote p {
+    font-size: 1.2em;
+}
+
 .workshop-title-time {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     align-items: baseline;
     /* justify-content: space-between; */
+}
+
+.keynote p.time {
+    font-size: 1.3em;
 }
 
 .workshop-title-time>* {
