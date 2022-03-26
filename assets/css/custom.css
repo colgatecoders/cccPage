@@ -23,6 +23,10 @@
 
 }
 
+a {
+    color:#FA991C
+}
+
 html.popup {
     /* margin */
     position: relative;
@@ -78,6 +82,11 @@ h3 {
     font-weight: 600;
 }
 
+h4 {
+    font-weight: 600;
+    margin: 5px;
+}
+
 .keynote h3 {
     font-size: 1.4em;
     width: 100%;
@@ -93,7 +102,17 @@ h3 {
     flex-wrap: wrap;
     gap: 10px;
     align-items: baseline;
+    margin-bottom: 5px;
     /* justify-content: space-between; */
+}
+
+.workshop-title-time a:first-child {
+    border-bottom: 2px solid #FA991C;
+    text-decoration: none;
+}
+
+.workshop-title-time h3 {
+    margin: 0;
 }
 
 .keynote p.time {
@@ -108,7 +127,8 @@ h3 {
     color: #aaaaaa;
 }
 
-.event-type {
+.event-type,
+button.neutral {
     color: white;
     border-radius: 5px;
     padding: 3px 4px 3px 4px;
@@ -118,7 +138,6 @@ h3 {
     font-family: 'Karla',
     sans-serif;
     font-size: 15px;
-    /* font-kerning: 1; */
     letter-spacing: 1px;
 }
 
@@ -146,13 +165,13 @@ h3 {
     border: none;
 }
 
-.event-type.series1 {
+.event-type.personal-site-series {
     background-color: #50e9e1;
     color: black;
     border: none;
 }
 
-.event-type.series2 {
+.event-type.SPA-series {
     color: black;
     background-color: #97ccf0;
     border-radius: 5px;
@@ -170,43 +189,79 @@ h3 {
     background: none;
 }
 
+.centered {
+    /* width: 100%; */
+    text-align: center;
+}
+
+button.neutral {
+    background-color: none;
+    background: none;
+    border-radius: 5px;
+    outline: none;
+    border: 3px solid #4a4c50;
+    padding: 5px;
+    text-transform: none;
+    transition: background-color .2s;
+}
+
+button.neutral.inactive {
+    color:#a9acb6
+}
+
+button.neutral:hover:not(.inactive) {
+    background-color: #3f4144;
+}
+
 body p.host {
     font-style: italic;
     margin: 0;
 }
 
-ul {
+ul,
+ol {
     background-color: rgb(26, 26, 26);
     padding: 10px;
     padding-left: 10px;
     border-radius: 10px;
-    /* padding: 0 0 20px 0; */
-    list-style: square;
-    /* list-style-position: inside; */
     color: #06C38F;
 }
 
-ul>li {
+ul ol {
+    margin-top: 10px;
+    background-color: rgb(32, 32, 32);
+    padding-left: 20px;
+}
+
+ul {
+    list-style: square;
+}
+
+ul ul {
+    list-style: circle;
+}
+
+ul>li,
+ol>li {
     margin-left: 15px;
+    margin-bottom: 10px;
 }
 
 ul>li:not(:last-child) {
     margin-bottom: 20px;
 }
 
-ul li p {
+ul li p,
+ol li p {
     margin-top: 5px;
 }
 
-ol {
+ol,
+ul {
     font-family: 'Karla', sans-serif;
     font-weight: 400;
     color: #fff;
     letter-spacing: -0.05em;
-}
-
-ol>li:not(:last-child) {
-    margin-bottom: 20px;
 }
 
 h2.proficiency.beginner {
@@ -248,4 +303,8 @@ h2.proficiency.advanced {
 
 .contact-link {
     color: #216ABD;
+}
+
+.collapse + * {
+    display: none;
 }

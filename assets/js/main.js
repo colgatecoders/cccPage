@@ -4,6 +4,16 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+// const collapse = (btn) => {
+// 	btn.classList.toggle("active");
+// 	var content = btn.nextElementSibling;
+// 	if (content.style.display === "block") {
+// 		content.style.display = "none";
+// 	} else {
+// 		content.style.display = "block";
+// 	}
+// }
+
 (function($) {
 
 	var	$window = $(window),
@@ -111,9 +121,23 @@
 				});
 
 	// Poptrox.
+
 		$main.poptrox({
-			onPopupOpen: function() { $body.addClass('is-poptrox-visible'); },
-			onPopupClose: function() { $body.removeClass('is-poptrox-visible'); },
+			onPopupOpen: () => { 
+				$body.addClass('is-poptrox-visible'); 
+
+				// var btns = document.getElementsByClassName("collapse");
+				// for (const btn of btns){
+				// 	btn[0].addEventListener("click", () => collapse(btn[0]));
+				// }
+			},
+			onPopupClose: () => { 
+				$body.removeClass('is-poptrox-visible');
+				// var btns = document.getElementsByClassName("collapse");
+				// for (const btn of btns){
+				// 	btn[0].removeEventListener("click", () => collapse(btn[0]));
+				// }
+			},
 			overlayColor: '#1e1f21',
 			overlayOpacity: 0.75,
 			popupCloserText: '',
