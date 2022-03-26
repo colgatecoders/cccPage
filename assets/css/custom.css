@@ -308,3 +308,7 @@ h2.proficiency.advanced {
 .collapse + * {
     display: none;
 }
+
+.panel-img {
+    width: 100%;
+}
