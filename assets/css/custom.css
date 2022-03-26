@@ -225,10 +225,6 @@ ol {
     padding-left: 10px;
     border-radius: 10px;
     color: #06C38F;
-    font-family: 'Karla',
-    sans-serif;
-    font-weight: 400;
-    letter-spacing: -0.05em;
 }
 
 ul ol {
@@ -258,6 +254,10 @@ ul>li:not(:last-child) {
 ul li p,
 ol li p {
     margin-top: 5px;
+    font-family: 'Karla',
+    sans-serif;
+    font-weight: 400;
+    letter-spacing: -0.05em;
 }
 
 h2.proficiency.beginner {
