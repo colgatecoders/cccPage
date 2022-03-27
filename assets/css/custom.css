@@ -2,25 +2,24 @@
 @import url("fontawesome-all.min.css");
 
 
+body.iframe {
+    padding: 0;
+    margin: 0;
+}
 
 @media screen and (max-width: 1280px) {
-
-    body.iframe {
-        margin: 80px;
-        margin-top: 90px;
+    body.iframe > *:not(header) {
+        margin-left: 80px;
+        margin-right: 80px;
     }
 
 }
 
 @media screen and (max-width: 736px) {
-
-    body.iframe {
-        margin: 20px;
-        margin-top: 90px;
-        /* width: 100%; */
-        /* position: relative; */
+    body.iframe > *:not(header) {
+        margin-left: 20px;
+        margin-right: 20px;
     }
-
 }
 
 a {
@@ -31,6 +30,8 @@ html.popup {
     /* margin */
     position: relative;
     width: 100%;
+    padding: 0;
+    margin: 0;
 }
 
 code {
@@ -64,10 +65,12 @@ code:only-of-type {
 .popup-header {
     background-color: #06C38F;
     width: 100%;
-    position: absolute;
     text-align: center;
-    top: 0;
-    left: 0;
+}
+
+.popup-header h1 {
+    margin: 0;
+    padding: 20px;
 }
 
 h1 {
@@ -242,7 +245,6 @@ button.neutral:hover:not(.inactive) {
 
 body p.host {
     font-style: italic;
-    margin: 0;
 }
 
 ul,
