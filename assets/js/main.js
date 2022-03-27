@@ -158,7 +158,7 @@
 		});
 
 		breakpoints.on('<=small', function() {
-			$main[0]._poptrox.windowMargin = 50;
+			$main[0]._poptrox.windowMargin = 30;
 		});
 
 	// Keyboard shortcuts.
