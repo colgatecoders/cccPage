@@ -33,6 +33,33 @@ html.popup {
     width: 100%;
 }
 
+code {
+    font-size: 14px;
+    display: block;
+    background-color: #072c22;
+    padding: 5px;
+}
+
+
+code:first-of-type {
+    padding-bottom: 1px;
+    border-radius: 5px 5px 0 0;
+}
+
+code:last-of-type {
+    padding-top: 1px;
+    border-radius: 0 0 5px 5px;
+}
+
+code + code:not(:last-of-type) {
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+code:only-of-type {
+    padding: 5px;
+    border-radius: 5px;
+}
 
 .popup-header {
     background-color: #06C38F;
@@ -225,6 +252,8 @@ ol {
     padding-left: 10px;
     border-radius: 10px;
     color: #06C38F;
+    font-family: 'Raleway',
+    sans-serif;
 }
 
 ul ol {
@@ -241,13 +270,18 @@ ul ul {
     list-style: circle;
 }
 
-ul>li,
-ol>li {
+ul ul > li:not(:last-child),
+ul ul > li p {
+    margin-bottom: 5px;
+}
+
+ul > li,
+ol > li {
     margin-left: 15px;
     margin-bottom: 10px;
 }
 
-ul>li:not(:last-child) {
+ul > li:not(:last-child) {
     margin-bottom: 20px;
 }
 

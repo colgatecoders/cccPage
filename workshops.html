@@ -67,6 +67,28 @@
                             <p>
                                 Install <a href="https://www.mozilla.org/en-US/firefox/windows/">Mozilla Firefox</a>
                             </p>
+                            <p>
+                                You can use Firefox or Chrome for web development, but Firefox has the best tools.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Set Firefox as your default browser for when you launch live server.
+                                Open the VScode command palette under view>command palette
+                            </p>
+                            <img src="images/workshop_images/webdev1.png">
+                        </li>
+                        <li>
+                            <p>
+                                Type preferences, and click on the "open workspace settings" result
+                            </p>
+                            <img src="images/workshop_images/webdev2.png">
+                        </li>
+                        <li>
+                            <p>
+                                In settings, search for "liveServer.settings.CustomBrowser" and switch the dropdown from null to Firefox
+                            </p>
+                            <img src="images/workshop_images/webdev3.png">
                         </li>
                     </ol>
                 </div>
@@ -83,19 +105,6 @@
                 <div class="instructions">
                 </div>
                 
-            </li>
-            <li>
-                <div id="js-details" class="workshop-title-time">
-                    <h3>Javascript Basics</h3>
-                    <p class="time">Wednesday, March 30th, 5-6 PM</p>
-                </div>
-                <p class="host">Hosted by Lily Davisson '22</p>
-                <p>Learn the basics of JavaScript and make a static website interactive. If you do not have any experience with JavaScript, attend this before React Basics.</p>
-                <button class="neutral collapse centered inactive">
-                    Setup instructions coming soon
-                </button>
-                <div class="instructions">
-                </div>
             </li>
             <li>
                 <div id="data-science-details" class="workshop-title-time">
@@ -118,7 +127,7 @@
                 </div>
                 <p class="host">Hosted by Alex Ng '22</p>
                 <p>Networking has become almost necessary to get a foot in the door to high-demand roles in industries like tech, finance, and consulting. Learn best practices regarding networking to land your dream job!</p>
-                 <button class="neutral collapse centered inactive">
+                <button class="neutral collapse centered inactive">
                     Setup instructions coming soon
                 </button>
                 <div class="instructions">
@@ -180,7 +189,7 @@
                     <p class="time">Tuesday, April 5th, 7-8 PM</p>
                 </div>
                 <p class="host">Hosted by Maeve Farley '24</p>
-                <p>Come learn the basics of Java, one of the most used programming languages! The fundamentals of java will be taught before applying them to some practice problems. </p>
+                <p>Come learn the basics of Java, one of the most used programming languages! The fundamentals of Java will be taught before applying them to some practice problems. </p>
                 <button class="neutral collapse centered inactive">
                     Setup instructions coming soon
                 </button>
@@ -229,10 +238,71 @@
                 </div>
                 <p class="host">Hosted by Bonnie Chin '22</p>
                 <p>Learn how to build a Django backend for a to-do app. </p>
+                <h4>Required Experience:</h4>
+                <ul>
+                    <li>
+                        <p>
+                            Some experience with Python
+                        </p>
+                    </li>
+                </ul>
                 <button class="neutral collapse centered inactive">
                     Setup instructions coming soon
                 </button>
                 <div class="instructions">
+                </div>
+            </li>
+            <li>
+                <div id="js-details" class="workshop-title-time">
+                    <h3>Javascript Basics</h3>
+                    <p class="time">Wednesday, March 30th, 5-6 PM</p>
+                </div>
+                <p class="host">Hosted by Lily Davisson '22</p>
+                <p>Learn the basics of JavaScript and make a static website interactive. If you do not have any experience with JavaScript, attend this before React Basics.</p>
+                <h4>Suggested Experience:</h4>
+                <ul>
+                    <li>
+                        <p>
+                            Experience with a c-like scripting language (Ex: Java, C), think curly braces and semi-colons
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            An understanding of the browser DOM OR attendance of web development basics workshop
+                        </p>
+                    </li>
+                </ul>
+                <button class="neutral collapse centered">
+                    Setup instructions
+                </button>
+                <div class="instructions">
+                    <p>Note: Code lines beginning with the '$' symbol indicate that everything AFTER the $ should be typed/copied in a terminal or command line.</p>
+                    <ol>
+                        <li><p>Install <a href="https://nodejs.org/en/">Node JS</a> using the install wizard. Use all of the recommended settings, don't change anything.</p></li>
+                        <li>
+                            <p>Ensure Node is installed correctly. Open a terminal (On Windows, open start and search for Windows terminal, on mac search for terminal from the launchpad) and type</p> 
+                            <code>$ node -v</code>
+                            <p>You should see something like the following:</p>
+                            <img src="images/workshop_images/jsbasics1.png" alt="Outputting the above code in a terminal outputs v16.4.2">
+                            <p>If it does not recognize node, it has not been installed correctly.</p>
+                        </li>
+                        <li>
+                            <p>
+                                Create a <a href="https://github.com/">Github</a> account if you do not already have one.
+                            </p>
+                        </li>
+                        <li>
+                            <p>Clone the <a href="https://github.com/techimmersionweek22/JS-Basics-Workshop">JS-Basics-Worshop repository</a> wherever you would like. It contains some start code.</p>
+                            <p>Ex to clone the repo to your desktop:</p>  
+                            <code>
+                                $ cd Desktop
+                            </code>
+                            <code>
+                                $ git clone https://github.com/techimmersionweek22/JS-Basics-Workshop.git
+                            </code>
+                            <p>If you use https instead of ssh to clone the repo as seen in the example above you will need to log in to your Github account as directed after you paste the above code.</p>
+                        </li>
+                    </ol>
                 </div>
             </li>
             <li>
@@ -247,6 +317,14 @@
                 </div>
                 <p class="host">Hosted by Ahmed Kamran '23</p>
                 <p>Learn how to host your personal websites for free by using GitHub Pages</p>
+                <h4>Suggested Experience:</h4>
+                <ul>
+                    <li>
+                        <p>
+                            Attendance of Web Development workshop
+                        </p>
+                    </li>
+                </ul>
                 <button class="neutral collapse centered inactive">
                     Setup instructions coming soon
                 </button>
@@ -265,7 +343,7 @@
                 </div>
                 <p class="host">Hosted by Ahmed Kamren '23</p>
                 <p>Learn the fundamentals of React, a front-end framework for building web applications with JavaScript, by building the front-end for a to-do list app.</p>     
-                <h4>Requires:</h4>
+                <h4>Required Experience:</h4>
                 <ul>
                     <li>
                         <p>
@@ -278,7 +356,6 @@
                 </button>
                 <div class="instructions">
                 </div>
-                <p class="host">Hosted by Ahmed Kamran '23</p>
             </li>
             <li>
                 <div id="open-source-details" class="workshop-title-time">
@@ -295,6 +372,14 @@
                 </div>
                 <p class="host">Hosted by Raluca Ghilea '22</p>
                 <p>A fundamental aspect of software engineering is code testing. In this workshop, you will learn how to write tests for individual functions using Python's unittest library. We will also cover more complex topics such as mocking and stubbing, and you will get a chance to practice writing your own unit tests!  </p>
+                <h4>Required Experience:</h4>
+                <ul>
+                    <li>
+                        <p>
+                            Some experience with Python OR attendance of the Intro to Python workshop
+                        </p>
+                    </li>
+                </ul>
                 <button class="neutral collapse centered inactive">
                     Setup instructions coming soon
                 </button>
@@ -308,6 +393,14 @@
                 </div>
                 <p class="host">Hosted by Raluca Ghilea '22</p>
                 <p>Most applications on the internet communicate with each other via Application Programming Interfaces (APIs). In this workshop, we will go over the fundamentals of HTTP requests and REST design principles, and we will apply these concepts in building a simple REST API using the FastAPI framework.  </p>
+                <h4>Required Experience:</h4>
+                <ul>
+                    <li>
+                        <p>
+                            Some experience with Python OR attendance of the Intro to Python workshop
+                        </p>
+                    </li>
+                </ul>
                 <button class="neutral collapse centered inactive">
                     Setup instructions coming soon
                 </button>
@@ -325,6 +418,14 @@
                 </div>
                 <p class="host">Hosted by Taz Syed '22</p>
                 <p>How many times has your program crashed due to a null pointer exception or a runtime error? Learn a functional programming language that maps much closer to the way humans naturally think, and ensures that if your program compiles then it works.</p>
+                <h4>Required Experience:</h4>
+                <ul>
+                    <li>
+                        <p>
+                            Experience with a scripting language like Python or Java
+                        </p>
+                    </li>
+                </ul>
                 <button class="neutral collapse centered inactive">
                     Setup instructions coming soon
                 </button>
@@ -343,6 +444,19 @@
                 </div>
                 <p class="host">Hosted by Lily Davisson '22</p>
                 <p>Combine what you learned in the Django Framework and React Basics workshops to create a dynamic single page to-do list application.</p>
+                <h4>Required Experience:</h4>
+                <ul>
+                    <li>
+                        <p>
+                            Attendance of React Basics workshop
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Attendance of Django workshop
+                        </p>
+                    </li>
+                </ul>
                 <button class="neutral collapse centered inactive">
                     Setup instructions coming soon
                 </button>
